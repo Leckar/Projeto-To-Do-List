@@ -74,12 +74,12 @@ function clrSelectedHandler() {
 const clrSelectedListener = () => {
   const clrSelected = document.querySelector('#remover-selecionado');
   clrSelected.addEventListener('click', clrSelectedHandler);
-}
+};
 // Handler do botão "remover-finalizados";
 function clrCompletedHandler() {
   const completeTasks = document.querySelectorAll('.completed');
-  completeTasks.forEach(element => {
-    element.parentElement.removeChild(element);    
+  completeTasks.forEach((element) => {
+    element.parentElement.removeChild(element);
   });
 }
 // Listener do botão "remover-finalizados";
@@ -136,7 +136,7 @@ function clrListHandler() {
 const clrListListener = () => {
   const clrList = document.querySelector('#apaga-tudo');
   clrList.addEventListener('click', clrListHandler);
-}
+};
 // Listener do carregamento da página;
 window.onload = () => {
   taskBttnListener();
